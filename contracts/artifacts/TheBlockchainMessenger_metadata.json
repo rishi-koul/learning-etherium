@@ -6,19 +6,26 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_someAddress",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "myAddress",
+				"name": "changeCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -30,21 +37,27 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "theMessage",
+				"outputs": [
 					{
-						"internalType": "address",
-						"name": "_myAddress",
-						"type": "address"
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
-				"name": "setMyAddress",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "setMyAddressToMsgSender",
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_newMessage",
+						"type": "string"
+					}
+				],
+				"name": "udpateTheMessage",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -63,7 +76,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ExampleConstructor.sol": "ExampleConstructor"
+			"contracts/TheBlockchainMessenger.sol": "TheBlockchainMessenger"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -77,12 +90,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ExampleConstructor.sol": {
-			"keccak256": "0x6b7de9abaad437dbe01829cce66ead60bf0eb0bdf96ff7d9f6e85af18e7fee21",
+		"contracts/TheBlockchainMessenger.sol": {
+			"keccak256": "0xffb9baf483e7799aa35e25df40b0099fa6be73131ef69801a474e3d5718b1d17",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://152cbd28a9ee6f463444e1ed5799ba520af90e84f6b2afb7c6fc108c5f5a09f5",
-				"dweb:/ipfs/QmTMLqH9qVMUfDu9VT7FEWYXvRxXYqx5ej2Ra1srNZaxzY"
+				"bzz-raw://38f6cfdf35a5544cab5ae3fde1c45d8814e514b404e5771d8c0f754cd1ae8bdf",
+				"dweb:/ipfs/QmRZwQTQSurfvujg7uj7qXqu8mRbf12WagwuhELfizyB5k"
 			]
 		}
 	},

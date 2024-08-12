@@ -15,4 +15,5 @@ contract ExampleConstructor{
     function setMyAddressToMsgSender() public {
         myAddress = msg.sender;
     }
-}
+    
+} 
