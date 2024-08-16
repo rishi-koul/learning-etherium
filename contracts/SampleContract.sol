@@ -17,6 +17,6 @@ contract SampleContract {
             myString = _newString;        
         } else {
             payable(msg.sender).transfer(msg.value);
-        }
+        } 
     }
 }
