@@ -17,9 +17,14 @@
 				"name": "payment",
 				"outputs": [
 					{
-						"internalType": "contract PaymentReceived",
-						"name": "",
+						"internalType": "address",
+						"name": "from",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -39,7 +44,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ExampleStruct.sol": "Wallet"
+			"contracts/ExampleStruct.sol": "Wallet2"
 		},
 		"evmVersion": "london",
 		"libraries": {},
